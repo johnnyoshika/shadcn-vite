@@ -1,5 +1,12 @@
+import { Route, Routes } from 'react-router';
+import Home from './routes/Home';
+
 const App = () => {
-  return <div>Hello</div>;
+  return (
+    <Routes>
+      <Route index element={<Home />} />
+    </Routes>
+  );
 };
 
 export default App;
